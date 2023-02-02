@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 250px;
+        margin-top: 250px;
+        border:1px solid black;
+        width: 355px;
+    }
+    span{
+        font-size: 60px;
+    }
+    .btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .btns button{
+        width: 100px;
+    }
+</style>
+<body>
+
+    <div class="wrapper">
+        <span class="score"> 0 </span>
+        <div class="btns">
+            <button class="plus" onclick="plusButton()"> Decrease </button>
+            <button class="reset" onclick="zeroButton()"> Reset </button>
+            <button class="minus" onclick="minusButton()"> Increase </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
